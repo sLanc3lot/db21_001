@@ -1,5 +1,5 @@
 <?php
-$controllers = array('pages'=>['home', 'error']); //st controller and action
+$controllers = array('pages'=>['home', 'error']); //list controller and action
 
 function call($controller, $action){
     echo "routes to ".$controller."-".$action."<br>";

@@ -1,8 +1,15 @@
 <?php
 $controllers = array('pages'=>['home', 'error']); //list controller and action
 
-function call($controller, $action){
-    echo "routes to ".$controller."-".$action."<br>";
+function call($controller, $action)
+{
+    require_once("controllers/".$controller."_controller.php");
+    switch($controller)
+    {
+        case "pages":   $controller = new PagesController();
+                        break;
+    }
+    $controller->{$action}();
 }
 
 if(array_key_exists($controller, $controllers))
@@ -15,14 +22,5 @@ else
 {   call('pages', 'error'); }
 
 
-function call($controller, $action)
-{
-    require_once("controllers/".$controller."_controller.php");
-    switch($controller)
-    {
-        case "pages":   $controller = new PagesController();
-                        break;
-    }
-    $controller->{$action}();
-}
+
 ?>

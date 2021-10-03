@@ -1,3 +1,4 @@
+<?php
 $servername = "localhost";
 $username = "username";
 $password = "password";
@@ -9,3 +10,4 @@ if ($conn->connect_error) {
 if (!$conn->select_db($dbname)){
     die("Connection failed:" .$conn->connect_error);
 }
+?>

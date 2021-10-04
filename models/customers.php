@@ -29,7 +29,7 @@
                 $customersList[]=new customers($ID,$code,$name,$address,$tel);
             }
             require("connection_close.php");
+            return $customersList;
         }
-        return $customersList;
     }
 ?>

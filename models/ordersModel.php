@@ -1,6 +1,6 @@
 <?php
 class orders{
-    public $O_ID:
+    public $O_ID;
     public $O_DATE;
 
     public function_construct($O_ID,$O_DATE){

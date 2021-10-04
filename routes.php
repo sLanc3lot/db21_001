@@ -1,5 +1,5 @@
 <?php
-$controllers = array('pages'=>['home', 'error'],'customers'=>['index']); //list controller and action
+$controllers = array('pages'=>['home', 'error'],'customers'=>['index'],'quotation_detail'=>['index']); //list controller and action
 
 function call($controller, $action)
 {

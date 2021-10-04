@@ -11,7 +11,7 @@
             $this->code=$code;
             $this->name=$name;
             $this->address=$address;
-            $this->tel=$tel
+            $this->tel=$tel;
         }
 
         

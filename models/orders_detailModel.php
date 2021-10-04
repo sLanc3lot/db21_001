@@ -1,6 +1,6 @@
 <?php
 class orders_detail{
-    public $OD_ID:
+    public $OD_ID;
     public $O_ID;
     public $C_ID;
     public $O_AMOUNT;

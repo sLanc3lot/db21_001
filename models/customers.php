@@ -18,7 +18,7 @@
         public static function getAll(){
             $customersList=[];
             require("connection_connect.php");
-            $sql = "select * from customers where 1"
+            $sql = "select * from customers";
             $result=$conn->query($sql);
             while($my_row=$result->fetch_assoc())
             {

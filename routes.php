@@ -1,5 +1,5 @@
 <?php
-$controllers = array('pages'=>['home', 'error']); //list controller and action
+$controllers = array('pages'=>['home', 'error'],'customers'=>['index']); //list controller and action
 
 function call($controller, $action)
 {
@@ -7,6 +7,9 @@ function call($controller, $action)
     switch($controller)
     {
         case "pages":   $controller = new PagesController();
+                        break;
+        case "customer": require("models/customer.php");
+                        $controller = new customerController();
                         break;
     }
     $controller->{$action}();

@@ -7,7 +7,7 @@
     echo "<tr> <td>$customers->ID</td>
     <td>$customers->code</td> <td>$customers->name</td>
     <td>$customers->address</td> <td>$customers->tel</td>
-    <td>update</td> <td>delete</td>;"
+    <td>update</td> <td>delete</td>";
 }
 echo "</table>";
 

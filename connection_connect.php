@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "http://158.108.207.4/phpmyadmin/";
 $username = "db21_001";
 $password = "db21_001";
 $dbname = "db21_001";

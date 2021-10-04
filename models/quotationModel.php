@@ -6,7 +6,7 @@ class quotation{
     public $EMP_CODE;
     public $ID;
 
-    public function_construct($QI_ID,$QU_DATE,,$QU_CONDITION,$EMP_CODE,$ID){
+    public function_construct($QI_ID,$QU_DATE,$QU_CONDITION,$EMP_CODE,$ID){
         $this->QI_ID=$QI_ID;
         $this->QU_DATE=$QU_DATE;
         $this->QU_CONDITION=$QU_CONDITION;

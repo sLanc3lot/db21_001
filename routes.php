@@ -9,7 +9,7 @@ function call($controller, $action)
         case "pages":   $controller = new PagesController();
                         break;
 
-        case "customer": require_once("models/customerModel.php");
+        case "customers": require_once("models/customerModel.php");
                         $controller = new customersController();
                         break;
 

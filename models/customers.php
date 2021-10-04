@@ -14,10 +14,11 @@
             $this->tel=$tel
         }
 
+        
         public static function getAll(){
             $customersList=[];
             require("connection_connect.php");
-            $sql = "select * from customers,department where ID='$ID' " //not finish
+            $sql = "select * from customers where 1"
             $result=$conn->query($sql);
             while($my_row=$result->fetch_assoc())
             {

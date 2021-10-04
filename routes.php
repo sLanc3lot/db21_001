@@ -8,10 +8,10 @@ function call($controller, $action)
     {
         case "pages":   $controller = new PagesController();
                         break;
-        case "customer": require("models/customer.php");
+        case "customer": require_once("models/customer.php");
                         $controller = new customersController();
                         break;
-        case "quotation_detail": require("models/quotation_detail.php");
+        case "quotation_detail": require_once("models/quotation_detail.php");
                         $controller = new quotation_detailController();
                         break;
     }

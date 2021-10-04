@@ -11,6 +11,9 @@ function call($controller, $action)
         case "customer": require("models/customer.php");
                         $controller = new customersController();
                         break;
+        case "quotation_detail": require("models/quotation_detail.php");
+                        $controller = new quotation_detailController();
+                        break;
     }
     $controller->{$action}();
 }

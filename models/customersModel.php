@@ -32,13 +32,5 @@
             require("connection_close.php");
             return $customersList;
         }
-
-        public static function add($ID,$code,$name,$address,$tel){
-            require("connection_connect.php");
-            $sql = "INSERT INTO customers(ID,code,name,address,tel) value ('$ID','$code','$name','$address','$tel')"
-            $result=conn->query($sql);
-            require("connection_close.php");
-            return "add success $result rows";
-        }
     }
 ?>

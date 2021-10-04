@@ -1,10 +1,6 @@
 <?php
     class customers{
-        public $ID;
-        public $code;
-        public $name;
-        public $address;
-        public $tel;
+        public $ID,$code,$name,$address,$tel;
 
         public function_construct($ID,$code,$name,$address,$tel){
             $this->ID=$ID;

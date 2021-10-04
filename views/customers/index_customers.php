@@ -15,7 +15,8 @@
     <td>$customers->address</td>
     <td>$customers->tel</td>
     <td>update</td>
-    <td>delete</td>";
+    <td>delete</td>
+    </tr>";
 }
 echo "</table>";
 

@@ -1,6 +1,6 @@
 <?php
 class product_color{
-    public $C_ID:
+    public $C_ID;
     public $PR_CODE;
     public $PR_COLOR;
 
